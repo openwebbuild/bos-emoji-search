@@ -7,7 +7,7 @@ function getConfig(network) {
   switch (network) {
     case "mainnet":
       return {
-        ownerId: "emoji-search.near",
+        ownerId: "ncd-cn.near",
         nodeUrl: "https://rpc.mainnet.near.org",
       };
     case "testnet":
