@@ -24,7 +24,7 @@ const config = getConfig(context.networkId);
 // Emoji helper functions
 function loadEmojis() {
   const res = fetch(
-    "https://raw.githubusercontent.com/ahfarmer/emoji-search/master/src/emojiList.json"
+    "https://raw.githubusercontent.com/openwebbuild/bos-emoji-search/master/src/emojiList.json"
   );
   return res.body && JSON.parse(res.body);
 }
