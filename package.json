@@ -1,0 +1,41 @@
+{
+  "name": "bos-emoji-search",
+  "version": "0.0.1",
+  "description": "Emoji Search on BOS",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "start:testnet": "APP_TESTNET_URL=https://test.near.org/emoji-search.testnet/widget/EmojiSearch && open $APP_TESTNET_URL && echo \"Preview at: $APP_TESTNET_URL\"",
+    "dev": "yarn start:testnet && bos-loader emoji-search.testnet --path src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openwebbuild/bos-emoji-search.git"
+  },
+  "keywords": [
+    "emoji",
+    "search",
+    "bos",
+    "component"
+  ],
+  "author": "think-in-universe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/openwebbuild/bos-emoji-search/issues"
+  },
+  "homepage": "https://github.com/openwebbuild/bos-emoji-search#readme",
+  "engines": {
+    "node": ">=14"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": false,
+    "trailingComma": "es5"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8"
+  }
+}
