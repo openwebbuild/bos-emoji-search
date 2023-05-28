@@ -67,12 +67,12 @@ return (
       props={{ textChange: handleSearchChange }}
     />
     <div>
-      {state.filteredEmoji.map((emoji) => (
+      {state.filteredEmoji.map(({ symbol, title }) => (
         <Widget
           src={`${config.ownerId}/widget/EmojiSearch.ResultRow`}
           props={{
-            symbol: emoji.symbol,
-            title: emoji.title,
+            symbol,
+            title,
           }}
         />
       ))}
