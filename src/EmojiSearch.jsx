@@ -2,6 +2,7 @@
 
 const accountId = props.accountId || context.accountId;
 
+// App Config
 function getConfig(network) {
   switch (network) {
     case "mainnet":
@@ -20,6 +21,7 @@ function getConfig(network) {
 }
 const config = getConfig(context.networkId);
 
+// Emoji helper functions
 function loadEmojis() {
   const res = fetch(
     "https://raw.githubusercontent.com/ahfarmer/emoji-search/master/src/emojiList.json"
@@ -41,8 +43,11 @@ function filterEmoji(searchText, maxResults) {
     .slice(0, maxResults);
 }
 
+// Load Emojis
 const emojiList = loadEmojis();
-console.log("emoji list", emojiList);
+if (!emojiList) {
+  return "Loading Emojis...";
+}
 
 State.init({
   filteredEmoji: filterEmoji("", 20),
