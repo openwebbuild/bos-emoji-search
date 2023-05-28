@@ -61,15 +61,15 @@ const handleSearchChange = (event) => {
 
 return (
   <div>
-    <Widget src={`${config.ownerId}/widget/Header`} />
+    <Widget src={`${config.ownerId}/widget/EmojiSearch.Header`} />
     <Widget
-      src={`${config.ownerId}/widget/SearchInput`}
+      src={`${config.ownerId}/widget/EmojiSearch.SearchInput`}
       props={{ textChange: handleSearchChange }}
     />
     <div>
       {state.filteredEmoji.map((emoji) => (
         <Widget
-          src={`${config.ownerId}/widget/EmojiResultRow`}
+          src={`${config.ownerId}/widget/EmojiSearch.ResultRow`}
           props={{
             symbol: emoji.symbol,
             title: emoji.title,
