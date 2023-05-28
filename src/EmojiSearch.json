@@ -1,0 +1,12 @@
+{
+  "description": "Example Emoji Search App: https://github.com/openwebbuild/bos-emoji-search",
+  "image": {
+    "ipfs_cid": "bafkreidojyvjaompcpmuvvlf7xnof77n7flhagusquyog3ozzy6rg6uyfm"
+  },
+  "name": "Emoji Search",
+  "tags": {
+    "emoji": "",
+    "search": "",
+    "app": ""
+  }
+}
