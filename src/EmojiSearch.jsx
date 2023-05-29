@@ -1,6 +1,6 @@
 // MIT License: https://github.com/openwebbuild/bos-emoji-search/blob/main/LICENSE
 
-const ROW_LIMIT = 20;
+const ROW_LIMIT = 10;
 
 // App Config
 function getConfig(network) {
